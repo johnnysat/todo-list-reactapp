@@ -8,7 +8,7 @@ function Todo(){
     <div className="todo-wrapper">
       <h1>ToDo List</h1>
       <form onSubmit={handleAddItemToList}>
-        <input type="text" placeholder="Adicione uma tarefa" onChange={handleChangeInput}/>
+        <input type="text" placeholder="Adicione uma tarefa" onChange={handleChangeInput} value={task} required/>
         <button type="submit">Adicionar</button>
       </form>
 
@@ -26,11 +26,13 @@ function Todo(){
     setTask(inputTask);
  }
 
- function handleAddItemToList(event){
-  event.preventDefault();
+  function handleAddItemToList(event){
+    event.preventDefault();
 
-  setItemsList([...itemsList, task])
- }
+    setItemsList([...itemsList, task])
+
+    setTask("");
+  }
 
 }
 
