@@ -1,4 +1,9 @@
 import React, { useState } from 'react';
+import List from './list'
+import Input from './input'
+import Button from './button'
+
+
 
 function Todo(){
   const [task, setTask] = useState("");
@@ -8,15 +13,10 @@ function Todo(){
     <div className="todo-wrapper">
       <h1>ToDo List</h1>
       <form onSubmit={handleAddItemToList}>
-        <input type="text" placeholder="Adicione uma tarefa" onChange={handleChangeInput} value={task} required/>
-        <button type="submit">Adicionar</button>
+        <Input type="text" placeholder="Adicione uma tarefa" onChange={handleChangeInput} value={task} />
+        <Button type="submit">Adicionar</Button>
       </form>
-
-      <ul className="todo-list">
-        {itemsList.map((item, index) => (
-          <li key={index}>{item}</li>
-        ))}
-      </ul>
+      <List itemsList={itemsList} />
     </div>
   );
 
