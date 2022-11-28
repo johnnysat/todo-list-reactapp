@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import List from './list'
-import Input from './input'
-import Button from './button'
+import List from './list/list'
+import Input from './input/input'
+import Button from './button/button'
 
 
 
