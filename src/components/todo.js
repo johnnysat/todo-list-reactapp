@@ -31,8 +31,8 @@ function Todo(){
       <Form onSubmit={handleAddItemToList}>
         <Input type="text" placeholder="Adicione uma tarefa" onChange={handleChangeInput} value={task} />
         <Button type="submit">Adicionar</Button>
+        <List itemsList={itemsList} />
       </Form>
-      <List itemsList={itemsList} />
     </div>
   );
 

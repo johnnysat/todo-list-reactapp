@@ -1,0 +1,13 @@
+ul {
+  list-style: none;
+  position: absolute;
+  top: 210px;
+  left: 565px;
+  width: 500px;
+  text-align: left;
+}
+
+ul li {
+  margin-top: 10px;
+  text-transform: capitalize;
+}
