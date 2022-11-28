@@ -1,8 +1,9 @@
 import React from 'react';
+import './button.css';
 
 function Button(props) {
   return (
-    <button type={props.type}>
+    <button className="button_form" type={props.type}>
       {props.children}
     </button>
   )

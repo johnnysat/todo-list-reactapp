@@ -3,6 +3,7 @@ import List from './list/list';
 import Input from './input/input';
 import Button from './button/button';
 import Form from './form/form';
+import './todo.css'
 
 
 
