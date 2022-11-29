@@ -9,7 +9,7 @@ import './todo.css'
 
 function Todo(){
   const [task, setTask] = useState("");
-  const [itemsList, setItemsList] = useState([]);
+  const [itemsList, setItemsList] = useState([1, 2, 3]);
 
   function handleChangeInput(event) {
     const inputTask = event.target.value;

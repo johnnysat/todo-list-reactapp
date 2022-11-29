@@ -10,4 +10,9 @@ ul {
 ul li {
   margin-top: 10px;
   text-transform: capitalize;
+  background-color: #CECECE;
+  border-radius: 5px;
+  width: 530px;
+  line-height: 30px;
+  padding-left: 10px;
 }
