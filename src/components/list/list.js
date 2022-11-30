@@ -5,14 +5,14 @@ import { MdVerified } from 'react-icons/md';
 
 
 
-function List(props) {
+function List(props ) {
   return (
     <ul className="todo-list">  
       {props.itemsList.map((item, index) => (
         <li key={index}>{item} 
           <div className="icons">
-            <MdVerified id="icon_verified"/>
-            <AiFillDelete id="icon_delete"/>
+            <MdVerified className="icon_li"/>
+            <AiFillDelete className="icon_li" onClick={props.onDelete}/>
           </div>
         </li>
       ))}

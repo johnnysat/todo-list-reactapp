@@ -18,10 +18,7 @@ ul li {
   justify-content: space-between;
 }
 
-#icon_verified {
+.icon_li {
   margin-right: 10px;
-}
-
-#icon_delete {
-  margin-right: 10px;
+  cursor: pointer;
 }
