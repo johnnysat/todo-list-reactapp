@@ -5,7 +5,7 @@ import { MdVerified } from 'react-icons/md';
 
 
 
-function List(props ) {
+function List(props) {
   return (
     <ul className="todo-list">  
       {props.itemsList.map((item, index) => (

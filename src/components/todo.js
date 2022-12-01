@@ -9,7 +9,7 @@ import './todo.css'
 
 function Todo(){
   const [task, setTask] = useState([]);
-  const [itemsList, setItemsList] = useState([]);
+  const [itemsList, setItemsList] = useState([1]);
 
   function handleChangeInput(event) {
     const inputTask = event.target.value;
@@ -26,9 +26,9 @@ function Todo(){
 
   const deleteItemToList = (itemsList) => {
     const itensCopy = Array.from(task);
-    itensCopy.splice(itemsList.key, 1);
+    itensCopy.splice(itemsList.index);
     setTask(itensCopy);
-    console.log(itemsList);
+    console.log(itemsList.key);
   }
 
   return (

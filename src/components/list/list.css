@@ -2,7 +2,7 @@ ul {
   list-style: none;
   position: absolute;
   top: 210px;
-  left: 565px;
+  margin-left: 63px;
   width: 500px;
   text-align: left;
 }
