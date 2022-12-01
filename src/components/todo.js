@@ -25,10 +25,7 @@ function Todo(){
   }
 
   const deleteItemToList = (itemsList) => {
-    const itensCopy = Array.from(task);
-    itensCopy.splice(itemsList.index);
-    setTask(itensCopy);
-    console.log(itemsList.key);
+    console.log('teste');
   }
 
   return (
