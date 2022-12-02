@@ -3,6 +3,7 @@ import List from './list/list';
 import Input from './input/input';
 import Button from './button/button';
 import Form from './form/form';
+import Footer from './footer/footer';
 import './todo.css'
 
 
@@ -36,6 +37,7 @@ function Todo(){
         <Button type="submit">Adicionar</Button>
         <List itemsList={itemsList} onDelete={() => deleteItemToList(itemsList)}/>
       </Form>
+      <Footer />
     </div>
   );
 
