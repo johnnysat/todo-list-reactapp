@@ -1,3 +1,10 @@
+## Projeto de Lista de Tarefas em React Javascript 
+Este projeto é uma  lista de tarefas em react para praticar os conhecimentos adquiridos até o momento.
+
+## Planejamento
+[]...
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
