@@ -7,10 +7,9 @@ import Footer from './footer/footer';
 import './todo.css'
 
 
-
 function Todo(){
   const [task, setTask] = useState([]);
-  const [itemsList, setItemsList] = useState([1]);
+  const [itemsList, setItemsList] = useState([]);
 
   function handleChangeInput(event) {
     const inputTask = event.target.value;
@@ -25,8 +24,10 @@ function Todo(){
     setTask("");
   }
 
-  const deleteItemToList = (itemsList) => {
-    console.log('teste');
+  const deleteItemToList = (index) => {
+    const itemDelete = Array.from(itemsList);
+    itemDelete.splice(index, 1);
+    setTask(itemDelete);
   }
 
   return (
@@ -35,7 +36,8 @@ function Todo(){
       <Form onSubmit={handleAddItemToList}>
         <Input type="text" placeholder="Adicione uma tarefa" onChange={handleChangeInput} value={task} />
         <Button type="submit">Adicionar</Button>
-        <List itemsList={itemsList} onDelete={() => deleteItemToList(itemsList)}/>
+        <List itemsList={itemsList} 
+        onDelete={() => deleteItemToList(itemsList)}/>
       </Form>
       <Footer />
     </div>
